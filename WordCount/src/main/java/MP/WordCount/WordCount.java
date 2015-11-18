@@ -43,7 +43,7 @@ public class WordCount {
 		/* 輸入資料的HDFS路徑 */
 		FileInputFormat.addInputPath(job, new Path("hdfs://c3master:8020/input02"));
 		/* 輸出資料的HDFS路徑 */
-		FileOutputFormat.setOutputPath(job, new Path("/output03"));
+		FileOutputFormat.setOutputPath(job, new Path("hdfs://c3master:8020/output03"));
 
 		/* 輸出Key的型別 */
 		job.setOutputKeyClass(Text.class);
